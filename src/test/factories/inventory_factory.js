@@ -6,7 +6,7 @@ export default (model) =>
   Factory.define(({ onCreate, params }) => {
     onCreate((inventory) => model.create(inventory));
 
-    const data = params[0];
+    const data = params;
     return {
         id: data.id ?? uuidv4(),
         part_id: data.model_number ?? uuidv4(),
