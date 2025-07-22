@@ -1,0 +1,28 @@
+{
+  "name": "express-mvc-app",
+  "version": "1.0.0",
+  "description": "A simple Express application following the MVC architecture.",
+  "main": "src/app.js",
+  "scripts": {
+    "start": "node src/app.js",
+    "test": "npx mocha src/test/*",
+    "reloadseed": "rm -f db.development.sqlite && NODE_ENV=development ./node_modules/.bin/sequelize db:migrate && NODE_ENV=development node ./node_modules/.bin/sequelize db:seed:all"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "fs": "^0.0.1-security",
+    "joi": "^17.13.3",
+    "jsonwebtoken": "^9.0.2",
+    "sequelize": "^6.37.7",
+    "sequelize-cli": "^6.6.3",
+    "sqlite3": "^5.1.7"
+  },
+  "devDependencies": {
+    "@faker-js/faker": "^8.4.1",
+    "fishery": "^2.2.2",
+    "mocha": "^10.4.0",
+    "should": "^13.2.3"
+  },
+  "author": "Ryan Moulton",
+  "license": "ISC"
+}
