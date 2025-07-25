@@ -20,6 +20,4 @@ export default {
     seederStorage: "sequelize",
     /* "logging": console.log, */
   },
-  jwtSecret: 'test_secret',
-  stripeUrl: 'https://api.stripe.com/v1/checkout/sessions',
 }
